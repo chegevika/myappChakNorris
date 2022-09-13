@@ -57,10 +57,16 @@ h2{
     display: flex;
     flex-wrap: wrap;
 }
-.tabs.clicked{
+#clicked{
     display: none;
 }
-
+#unclicked{
+    margin-top: 20px;
+    margin-left:-10px;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
 #categ_button{
     border: 2px solid #F8F8F8;
     color: #ABABAB;
@@ -110,57 +116,88 @@ h3{
     flex-direction: row;
 }
 #logo{
+    background-image: url(img/Group1.png);
     margin-left: 40px;
     margin-top: 67px;
     width:40px;
     height: 40px;
-}
-.id{
     position:absolute;
-    top:66px;
-    left:100px;
 }
-.id span{
+.joke_id{
+    position:absolute;
+    top:65px;
+    left:100px;
+    color: #ABABAB;
+
+}
+.joke_id span{
     color:#7291FF;
+    font-weight: 500;
+    font-size: 10px;
+    font-weight: 500;
+    font-size: 10px;
 }
 .update{
     position:absolute;
     bottom:45px;
     left:100px; 
+    font-weight: 400;
+    font-size: 10px;
+    color: #ABABAB;
 }
-#like_btn, #like_btn_red{
+
+.joke_cont_floor{
+    display: flex;
+    flex-direction: row;
+}
+.categories_btn_joke{
+    padding: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 160px;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 2px;
+    background-color: #FFFFFF;
+    border-style: none;
+    
+}
+
+#activeLikeButton{
+    background-image: url(img/like_red.jpg);
+    width:5%;
+    height: 35px;
     position:absolute;
     right: 40px;
     top: 40px;
-    width:40px;
-    height:25px;
+    cursor:pointer;}
+
+#inactiveLikeButton{
+    background-image: url(img/like.jpg);
+    width:5%;
+    height: 35px;
+    position:absolute;
+    right: 40px;
+    top: 40px;
     cursor:pointer;
-  
 }
-#like_btn:hover  {
-    width:45px;
-    height:30px;
-}
-#like_btn_red:hover{
-    width:45px;
-    height:30px;
-}
-#like_btn.liked{
+
+#inactiveLikeButton.liked{
      display:none;
 }
-#like_btn2.liked{
-    display:none;
-}
+
 .joke{
-    text-align: center;
+    text-align: left;
+   
 }
 .joke p{
     font-weight: 400;
     font-size: 18px;
     margin-top: 86px;
-    margin-left: 30px;
+   margin-left: 100px;
     margin-right: 40px;
     margin-bottom: 87px;
+    color: #333333
 }
 #main_joke h4{
     font-weight: 500;
@@ -178,7 +215,9 @@ h3{
     color:#ABABAB;
     margin-left: 40px;
 }
-#new_favJoke_clone{
+
+
+.new_favJoke_clone{
     position: relative;
     width:400px;
     height: auto;
@@ -193,27 +232,31 @@ h3{
     display: flex;
     flex-direction: column;
 }
-#new_favJoke_clone h4{
+.new_favJoke_clone h4{
     font-weight: 500;
     font-size: 10px;
     color: #ABABAB;
 }
-#new_favJoke_clone.id{
+.new_favJoke_clone.id{
     position:absolute;
     top:47px;
     left:80px;
 }
 
-#new_favJoke_clone p{
+.new_favJoke_clone p{
     font-weight: 400;
     font-size: 14px;
     margin-left: 20px;
     color:#333333;
     margin-top: 5px;
 }
-#new_favJoke_clone.update{
+.new_favJoke_clone.update{
     position: absolute;
     bottom:20px;
     left:80px; 
+}
+
+.new_favJoke_clone .joke_cont_floor .categories_btn_joke{
+display: none;
 }
 
